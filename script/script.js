@@ -11,7 +11,7 @@ function render() {
 
 function getBooks(i) {
     return ` <div class="box" > <div class="book_title">
-                               <div class="book_img"><img src="../img/book.png" alt="book.png"> </div>
+                               <div class="book_img"><img src="./img/book.png" alt="book.png"> </div>
                                <h1> ${books[i].name}</h1></div>  <hr>
                                 <div class="price_likes">
                                <div class="price">
@@ -57,7 +57,7 @@ function getBooks(i) {
 
 function likedOrNotLiked (i) {
     if (books[i].liked === true) {
-      return `  <img class="heart_img" src="../img/like.png" alt="" onclick="toggleLike(${i})"></img> `
+      return `  <img class="heart_img" src="./img/like.png" alt="" onclick="toggleLike(${i})"></img> `
     } else {
         return ` <img  class="heart_img" src="./img/unlike.png" alt="" onclick="toggleLike(${i})"></img>  `
     }
